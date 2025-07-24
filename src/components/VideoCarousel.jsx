@@ -103,7 +103,7 @@ const VideoCarousel = () => {
           videoRef.current[videoId].currentTime /
             hightlightsSlides[videoId].videoDuration
         );
-        console.log(videoId)
+        
       };
 
       if (isPlaying) {
