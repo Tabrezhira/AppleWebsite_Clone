@@ -8,7 +8,7 @@ import { hightlightsSlides } from "../constants";
 import { pauseImg, playImg, replayImg } from "../utils";
 
 const VideoCarousel = () => {
-  const videoRef = useRef([]);
+ const videoRef = useRef([]);
   const videoSpanRef = useRef([]);
   const videoDivRef = useRef([]);
 
@@ -103,6 +103,7 @@ const VideoCarousel = () => {
           videoRef.current[videoId].currentTime /
             hightlightsSlides[videoId].videoDuration
         );
+        console.log(videoId)
       };
 
       if (isPlaying) {
@@ -230,5 +231,6 @@ const VideoCarousel = () => {
     </>
   );
 };
+
 
 export default VideoCarousel;
